@@ -6,4 +6,6 @@ The new version of my website!
 
 The old version of my website is still available on the following repository: https://github.com/gruvw/portfolio
 
+Checkout the project's [roadmap](roadmap.md).
+
 Powered by [GitHub Pages](https://pages.github.com/) and [Zola](https://github.com/getzola/zola/).
