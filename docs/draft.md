@@ -35,6 +35,13 @@
     - Table of content
     - Project page external link
     - Project's text (with pictures, videos, code)
+    - Project edits, later additions (with date, and mention at top of page)
 - Documents page
 - Slides page
 - 404 page
+
+## Website favicon
+
+- Inspiration from the `<` tag opening programming character
+- Inspiration from a network or graph like structure with vertices (circles) and edges (lines)
+- Orientation, from bottom, oriented 45 degree's upward, sharing, duplicate, expend
