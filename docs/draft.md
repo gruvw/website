@@ -6,7 +6,7 @@
     - Top bar
         - Profile picture + gruvw
         - Search bar
-        - Hamburger navigation menu
+        - Hamburger navigation menu (or simple textual header links)
         - Redirects
             - Email to
             - GitHub
@@ -45,3 +45,4 @@
 - Inspiration from the `<` tag opening programming character
 - Inspiration from a network or graph like structure with vertices (circles) and edges (lines)
 - Orientation, from bottom, oriented 45 degree's upward, sharing, duplicate, expend
+- Looks like a sharing icon as the website is made to share thoughts and projects

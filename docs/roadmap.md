@@ -9,4 +9,5 @@
 - [ ] Resume generator from data file (JSON resume or other)
 - [ ] Search engine for all pages
 - [ ] SEO
+- [ ] Analytics
 - [ ] Move old website to `old.gruvw.com`
