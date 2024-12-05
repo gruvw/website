@@ -2,37 +2,42 @@
 
 {% block content %}
 <style>
-  #toggle {
-  }
-
-  #toggle:checked ~ #nh-content {
-    display: block;
-  }
-
-  #toggle:checked ~ #nd-content {
-    display: none;
-  }
-
-  #nh-content {
+  .compact-visible {
     display: none;
   }
 </style>
 
 <div>
-  <input type="checkbox" id="toggle">
-  <label for="toggle">Toggle</label>
+  <input type="checkbox" id="compact-toggle">
 </div>
 
 <section>
   <div>
     <p>Always visible content!</p>
   </div>
-  <div id="nd-content">
-    <p>Normally displayed content!</p>
+  <div class="compact-hidden">
+    <p>Compact hidden content!</p>
   </div>
-  <div id="nh-content">
-    <p>Normally hidden content!</p>
+  <div class="compact-visible">
+    <p>Compact visible content!</p>
   </div>
 </section>
+
+<script>
+  // Toggle elements visibility for the compact style
+
+  document.getElementById("compact-toggle").addEventListener("change", function() {
+    const compactVisible = document.querySelector(".compact-visible");
+    const compactHidden = document.querySelector(".compact-hidden");
+
+    if (this.checked) {
+      compactVisible.style.display = "block";
+      compactHidden.style.display = "none";
+    } else {
+      compactVisible.style.display = "none";
+      compactHidden.style.display = "block";
+    }
+  });
+</script>
 
 {% endblock content %}
