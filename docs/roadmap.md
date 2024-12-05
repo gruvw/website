@@ -6,7 +6,7 @@
 - [ ] Draw basic user interface (mobile first)
 - [ ] Implement basic WEB user interface
 - [ ] Support dark theme
-- [ ] Resume generator from data file (JSON resume or other)
+- [ ] Resume generator from data file (JSON resume or other), short and long version
 - [ ] Search engine for all pages
 - [ ] SEO
 - [ ] Analytics

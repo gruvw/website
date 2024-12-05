@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+  #toggle {
+  }
+
+  #toggle:checked ~ #nh-content {
+    display: block;
+  }
+
+  #toggle:checked ~ #nd-content {
+    display: none;
+  }
+
+  #nh-content {
+    display: none;
+  }
+</style>
+
+<div>
+  <input type="checkbox" id="toggle">
+  <label for="toggle">Toggle</label>
+</div>
+
+<section>
+  <div>
+    <p>Always visible content!</p>
+  </div>
+  <div id="nd-content">
+    <p>Normally displayed content!</p>
+  </div>
+  <div id="nh-content">
+    <p>Normally hidden content!</p>
+  </div>
+</section>
+
+{% endblock content %}
