@@ -1,15 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-<style>
-  .compact-visible {
-    display: none;
-  }
-</style>
-
-<div>
-  <input type="checkbox" id="compact-toggle">
-</div>
+<section id="toggle-area">
+  <span class="toggle-label">Detailed</span>
+  <label class="switch">
+    <input type="checkbox" id="compact-toggle">
+    <span class="slider"></span>
+  </label>
+  <span class="toggle-label">Compact</span>
+</section>
 
 <section>
   <div>
@@ -24,9 +23,9 @@
 </section>
 
 <script>
-  // Toggle elements visibility for the compact style
+  // Toggle resume elements visibility for the compact style
 
-  document.getElementById("compact-toggle").addEventListener("change", function() {
+  document.getElementById("compact-toggle").addEventListener("change", function () {
     const compactVisible = document.querySelector(".compact-visible");
     const compactHidden = document.querySelector(".compact-hidden");
 
@@ -39,5 +38,4 @@
     }
   });
 </script>
-
 {% endblock content %}
