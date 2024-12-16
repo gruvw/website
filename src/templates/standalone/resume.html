@@ -4,14 +4,18 @@
 Resume
 {%- endblock subtitle -%}
 
+{%- block description -%}
+Explore the professional resume of Lucas Jung aka Gruvw, showcasing skills, experience, education, hobbies, and accomplishments.
+{%- endblock description -%}
+
 {% block content %}
 <section id="toggle-area">
   <span class="toggle-label">Detailed</span>
-  <label class="switch">
+  <div class="switch">
     <input type="checkbox" id="compact-toggle">
     <span class="slider"></span>
-  </label>
-  <span class="toggle-label">Compact</span>
+  </div>
+  <label class="toggle-label" for="compact-toggle">Compact</label>
 </section>
 
 <section>
@@ -25,7 +29,9 @@ Resume
     <p>Compact visible content!</p>
   </div>
 </section>
+{% endblock content %}
 
+{% block script %}
 <script>
   // Toggle resume elements visibility for the compact style
 
@@ -42,4 +48,4 @@ Resume
     }
   });
 </script>
-{% endblock content %}
+{% endblock script %}

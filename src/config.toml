@@ -1,9 +1,18 @@
 base_url = "https://beta.gruvw.com"
 
 compile_sass = true
-build_search_index = false
+minify_html = true
+build_search_index = false # TODO search box
+
+default_language = "en"
+
+[search]
+include_title = true
+include_description = false
+include_content = true
 
 [markdown]
 highlight_code = true
 
 [extra]
+title = "Gruvw" # Website title and subtitle suffix

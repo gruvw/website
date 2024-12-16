@@ -1,8 +1,12 @@
 {% extends "base.html" %}
 
 {%- block title -%}
-{{ name }}
+{{ config.extra.title }}
 {%- endblock title -%}
+
+{%- block description -%}
+Explore the website of Lucas Jung, aka Gruvw, a passionate software engineer and avid learner. Discover innovative projects in Python, robotics, web development, IoT, and many more projects, alongside other documents and academic cheat sheets.
+{%- endblock description -%}
 
 {% block content %}
 Hello World from @gruvw using Zola :)

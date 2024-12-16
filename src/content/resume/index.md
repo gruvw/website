@@ -1,3 +1,3 @@
 +++
-template = "resume.html"
+template = "standalone/resume.html"
 +++

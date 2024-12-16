@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {% set name = "Gruvw" -%}
-  <title>{% block title %}{% block subtitle %}Page{% endblock subtitle %} - {{ name }}{% endblock title %}</title>
+  <title>{% block title %}{% block subtitle %}Page{% endblock subtitle %} - {{ config.extra.title }}{% endblock title %}</title>
+
+  <meta name="description" content="{% block description %}Explore the website of Lucas Jung, aka Gruvw, a passionate software engineer and avid learner.{% endblock description %}">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +20,9 @@
 <body>
   {% block content %}
   {% endblock content %}
+
+  {% block script %}
+  {% endblock script %}
 </body>
 
 </html>
