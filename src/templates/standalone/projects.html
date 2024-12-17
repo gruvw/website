@@ -1,14 +1,17 @@
 {% extends "system/base.html" %}
 
 {%- block subtitle -%}
-404
+Projects
 {%- endblock subtitle -%}
 
 {%- block description -%}
-The page you're looking for on Gruvw's website can't be found. It might have been moved, deleted, or never existed.
+<!-- TODO projects page description -->
 {%- endblock description -%}
 
 {% block content %}
-404
-<!-- TODO 404 page -->
+Projects page
+
+{% for post in section.pages %}
+  <h1><a href="{{ post.permalink }}">{{ post.title }}</a></h1>
+{% endfor %}
 {% endblock content %}

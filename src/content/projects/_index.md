@@ -1,0 +1,3 @@
++++
+template = "standalone/projects.html"
++++
