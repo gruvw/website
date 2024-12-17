@@ -18,8 +18,24 @@
 </head>
 
 <body>
-  {% block content %}
-  {% endblock content %}
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    {% block content %}
+    {% endblock content %}
+  </main>
+
+  <footer>
+    <div class="copyright">
+      <p>© <script>document.write(/\d{4}/.exec(Date())[0])</script> Lucas Jung, All Rights Reserved.</p>
+    </div>
+  </footer>
 
   {% block script %}
   {% endblock script %}
