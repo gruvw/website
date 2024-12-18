@@ -20,6 +20,8 @@
 
   <link rel="icon" href="favicon.svg">
   <link rel="stylesheet" href="{{ get_url(path="main.css") }}">
+
+  <script src="{{ get_url(path="js/themeSwitch.js") }}"></script>
 </head>
 
 <body>
@@ -31,6 +33,11 @@
         <li><a href="{{ get_url(path="@/resume/index.md") }}">Resume</a></li>
       </ul>
     </nav>
+
+    <div class="theme-picker-wrapper">
+      <input type="checkbox" id="theme-picker"/>
+      <label for="theme-picker">Switch theme</label>
+    </div>
   </header>
 
   <main>
@@ -40,7 +47,7 @@
 
   <footer>
     <div class="copyright">
-      <p>© <script>document.write(/\d{4}/.exec(Date())[0])</script> Lucas Jung, All Rights Reserved.</p>
+      <p>© <script>document.write(/\d{4}/.exec(Date())[0])</script> Lucas Jung (@gruvw), All Rights Reserved.</p>
     </div>
   </footer>
 

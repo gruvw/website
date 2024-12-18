@@ -6,11 +6,27 @@
   margin: 0;
 }
 
+html {
+  color-scheme: light dark;
+
+  --main-bg-color: light-dark(white, black);
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+}
+
 body {
   display: flex;
   flex-direction: column;
 
   min-height: 100vh;
+
+  background-color: var(--main-bg-color);
 
   font-size: 18px;
   font-family: "Roboto", sans-serif;
