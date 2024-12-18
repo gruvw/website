@@ -7,7 +7,12 @@
 
   <title>{% block title %}{% block subtitle %}Page{% endblock subtitle %} - {{ config.extra.title }}{% endblock title %}</title>
 
+  <meta name="author" content="Lucas Jung (@gruvw)">
   <meta name="description" content="{% block description %}Explore the website of Lucas Jung, aka Gruvw, a passionate software engineer and avid learner.{% endblock description %}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Gruvw">
+  <link rel="canonical" href="{% if current_url is defined %}{{ current_url }}{% else %}{{ get_url(path="404.html") }}{% endif %}">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +27,8 @@
     <nav>
       <ul>
         <li><a href="/">Home</a></li>
+        <li><a href="{{ get_url(path="@/projects/_index.md") }}">Projects</a></li>
+        <li><a href="{{ get_url(path="@/resume/index.md") }}">Resume</a></li>
       </ul>
     </nav>
   </header>
