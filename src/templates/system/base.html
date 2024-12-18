@@ -19,13 +19,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
   <link rel="icon" href="favicon.svg">
-  <link rel="stylesheet" href="{{ get_url(path="main.css") }}">
+  <link rel="stylesheet" href="{{ get_url(path="base.css") }}">
+  {% block style %}{% endblock style %}
 
   <script src="{{ get_url(path="js/themeSwitch.js") }}"></script>
 </head>
 
 <body>
   <header>
+    <a class="top-home" href="/">
+      <img src="{{ get_url(path="assets/global/lucas_jung-min.jpg") }}" alt="Lucas Jung profile picture">
+      <span>Gruvw</span>
+    </a>
+
+    <label id="menu-icon">
+      <input type="checkbox" id="menu-btn"/>
+      <span id="navicon"></span>
+    </label>
+
     <nav>
       <ul>
         <li><a href="/">Home</a></li>
@@ -34,7 +45,7 @@
       </ul>
     </nav>
 
-    <label class="theme-picker-wrapper">
+    <label class="theme-picker-container">
       <input type="checkbox" id="theme-picker"/>
       Switch theme
     </label>

@@ -1,5 +1,9 @@
 {% extends "system/base.html" %}
 
+{%- block style -%}
+<link rel="stylesheet" href="{{ get_url(path="resume/resume.css") }}">
+{%- endblock style -%}
+
 {%- block subtitle -%}
 Resume
 {%- endblock subtitle -%}

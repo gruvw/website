@@ -7,9 +7,12 @@
 }
 
 html {
+  font-size: 1.2rem;
+
   color-scheme: light dark;
 
-  --main-bg-color: light-dark(white, black);
+  --bg-color: light-dark(white, black);
+  --text-color: light-dark(black, white);
 }
 
 [data-theme="light"] {
@@ -26,11 +29,12 @@ body {
 
   min-height: 100vh;
 
-  background-color: var(--main-bg-color);
+  background-color: var(--bg-color);
 
-  font-size: 18px;
+  font-size: 1rem;
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
+  color: var(--text-color);
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -43,6 +47,10 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
+}
+
+a {
+  color: inherit;
 }
 
 main {
