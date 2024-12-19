@@ -1,16 +1,18 @@
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  #top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  padding: 1rem 2rem;
-  border-bottom: 0.2rem solid var(--text-color);
-
-  a {
-    text-decoration: inherit;
+    padding: 1rem clamp(1rem, 3%, 3rem);
+    border-bottom: 0.2rem solid var(--text-color);
   }
 
-  .top-home {
+  a {
+    text-decoration: none;
+  }
+
+  #top-home {
     display: flex;
     align-items: center;
 
@@ -41,7 +43,7 @@ header {
       height: 0.2rem;
       background: var(--text-color);
       position: relative;
-      transition: background .2s ease-out;
+      transition: background var(--animation-speed) var(--animation-type);
     }
 
     #navicon::before,
@@ -52,7 +54,7 @@ header {
       height: 100%;
       background: var(--text-color);
       position: absolute;
-      transition: all .2s ease-out;
+      transition: all var(--animation-speed) var(--animation-type);
     }
 
     #navicon::before {
@@ -81,12 +83,20 @@ header {
     }
   }
 
-  nav {
-    list-style: none;
+  #nav-unfold {
+    height: 0;
+    opacity: 0;
+    overflow-y: hidden;
+    transition: opacity var(--animation-speed) var(--animation-type);
+
+    ul {
+      list-style: none;
+    }
   }
 
-  nav,
-  .theme-picker-container {
-    display: none;
+  &:has(#menu-btn:checked) #nav-unfold {
+    height: auto;
+    opacity: 1;
+    border-bottom: 0.2rem solid var(--text-color);
   }
 }

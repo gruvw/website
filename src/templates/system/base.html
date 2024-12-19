@@ -27,28 +27,32 @@
 
 <body>
   <header>
-    <a class="top-home" href="/">
-      <img src="{{ get_url(path="assets/global/lucas_jung-min.jpg") }}" alt="Lucas Jung profile picture">
-      <span>Gruvw</span>
-    </a>
+    <div id="top-bar">
+      <a id="top-home" href="/">
+        <img src="{{ get_url(path="assets/global/lucas_jung-min.jpg") }}" alt="Lucas Jung profile picture">
+        <span>Gruvw</span>
+      </a>
 
-    <label id="menu-icon">
-      <input type="checkbox" id="menu-btn"/>
-      <span id="navicon"></span>
-    </label>
+      <label id="menu-icon">
+        <input type="checkbox" id="menu-btn"/>
+        <span id="navicon"></span>
+      </label>
+    </div>
 
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="{{ get_url(path="@/projects/_index.md") }}">Projects</a></li>
-        <li><a href="{{ get_url(path="@/resume/index.md") }}">Resume</a></li>
-      </ul>
-    </nav>
+    <div id="nav-unfold">
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="{{ get_url(path="@/projects/_index.md") }}">Projects</a></li>
+          <li><a href="{{ get_url(path="@/resume/index.md") }}">Resume</a></li>
+        </ul>
+      </nav>
 
-    <label class="theme-picker-container">
-      <input type="checkbox" id="theme-picker"/>
-      Switch theme
-    </label>
+      <label class="theme-picker-container">
+        <input type="checkbox" id="theme-picker"/>
+        Switch theme
+      </label>
+    </div>
   </header>
 
   <main>

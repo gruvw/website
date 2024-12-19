@@ -1,15 +1,15 @@
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
 * {
   margin: 0;
+  padding: 0;
 }
 
 html {
   font-size: 1.2rem;
 
   color-scheme: light dark;
+
+  --animation-speed: .2s;
+  --animation-type: ease-out;
 
   --bg-color: light-dark(white, black);
   --text-color: light-dark(black, white);
@@ -55,6 +55,7 @@ a {
 
 main {
   flex-grow: 1;
+  margin: 0 1rem;
 }
 
 footer {
