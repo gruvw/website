@@ -11,7 +11,7 @@ header {
     align-items: center;
 
     padding: 1rem clamp(1rem, 3%, 3rem);
-    border-bottom: 0.2rem solid var(--text-color);
+    border-bottom: var(--border-width) solid var(--text-color);
   }
 
   a {
@@ -46,7 +46,7 @@ header {
     #navicon {
       display: block;
       width: 1.5rem;
-      height: 0.2rem;
+      height: var(--border-width);
       background: var(--text-color);
       position: relative;
       transition: background var(--animation-speed) var(--animation-type);
@@ -103,7 +103,7 @@ header {
   &:has(#menu-btn:checked) #nav-unfold {
     height: auto;
     opacity: 1;
-    border-bottom: 0.2rem solid var(--text-color);
+    border-bottom: var(--border-width) solid var(--text-color);
   }
 
   nav {
@@ -113,8 +113,8 @@ header {
       display: flex;
       flex-wrap: wrap;
       background-color: var(--text-color);
-      gap: .2rem;
-      border-bottom: 0.2rem solid var(--text-color);
+      gap: var(--border-width);
+      border-bottom: var(--border-width) solid var(--text-color);
 
       li {
         flex: 1 1 9rem;
