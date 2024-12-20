@@ -11,7 +11,9 @@ html {
   --animation-speed: .2s;
   --animation-type: ease-out;
 
+  // TODO colors (light and dark mode)
   --bg-color: light-dark(white, black);
+  --bg-hover-color: light-dark(#e0e0e0, #e0e0e0);
   --text-color: light-dark(black, white);
 }
 
