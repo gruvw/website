@@ -8,4 +8,4 @@ The old version of my website is still available on the following repository: ht
 
 Check out the project's [roadmap](docs/roadmap.md).
 
-Powered by [GitHub Pages](https://pages.github.com/) and [Zola](https://github.com/getzola/zola/).
+Powered by [Zola](https://github.com/getzola/zola/) and [GitHub Pages](https://pages.github.com/).

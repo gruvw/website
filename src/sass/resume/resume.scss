@@ -58,3 +58,52 @@ input:checked + .slider {
 input:checked + .slider:before {
   transform: translateX(26px);
 }
+
+#cv-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  #top-intro {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    img {
+      width: 8rem;
+      height: 8rem;
+      border-radius: 2rem;
+    }
+
+    #intro-title {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+
+      h2 {
+        font-size: 1.2rem;
+        font-weight: 400;
+      }
+
+      #intro-name {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+
+        h1 {
+          font-size: 1.4rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  hr {
+    width: 100%;
+    height: 0.1rem;
+    border-width: 0;
+    background-color: var(--text-color);
+  }
+}
