@@ -51,18 +51,27 @@
   border-radius: 50%;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #1E3A8A;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   transform: translateX(26px);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #cv-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  $content-max-width: 40rem;
+  max-width: $content-max-width;
 
   #top-intro {
     display: flex;
@@ -97,6 +106,44 @@ input:checked + .slider:before {
           font-weight: 500;
         }
       }
+    }
+  }
+
+  .cv-section {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+
+    @media screen and (min-width: $content-max-width) {
+      flex-direction: row;
+
+      h2 {
+        text-align: right;
+      }
+    }
+
+    h2 {
+      // fix width to right align titles
+      // set to maximum length of titles
+      width: 14ch;
+      margin-right: 1rem;
+    }
+
+    p {
+      text-align: justify;
+    }
+
+    &>div {
+      width: 100%;
+    }
+
+    .cv-enum {
+      display: grid;
+      grid-gap: 0.5rem 1rem;
+
+      // set minmax size according to grid children maximum width
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     }
   }
 
