@@ -15,4 +15,6 @@ include_content = true
 highlight_code = true
 
 [extra]
-title = "Gruvw" # Website title and subtitle suffix
+title = "Gruvw" # website pages title and subtitle suffix
+email = "gruvw.dev@gmail.com" # contact email
+github = "gruvw" # GitHub username

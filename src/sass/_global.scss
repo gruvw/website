@@ -1,3 +1,7 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +20,11 @@ html {
   --bg-color: light-dark(white, black);
   --bg-hover-color: light-dark(#e0e0e0, #e0e0e0);
   --text-color: light-dark(black, white);
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
 }
 
 [data-theme="light"] {
@@ -38,6 +47,10 @@ body {
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
   color: var(--text-color);
+}
+
+input, button, textarea, select {
+  font: inherit;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
