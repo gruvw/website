@@ -13,18 +13,22 @@ Explore the professional resume of Lucas Jung aka Gruvw, showcasing skills, expe
 {%- endblock description -%}
 
 {% block content %}
-<section id="toggle-area">
-  <span class="toggle-label">Detailed</span>
-  <label class="switch">
-    <input type="checkbox" id="compact-toggle">
-    <span class="slider"></span>
-  </label>
-  <span class="toggle-label">Compact</span>
+<h1>Lucas Jung's Resume</h1>
+
+<section id="action-bar">
+  <div class="toggle-container">
+    <span class="label">Detailed</span>
+    <label class="toggle">
+      <input type="checkbox" id="compact-toggle">
+      <span class="slider"></span>
+    </label>
+    <label class="label" for="compact-toggle">Compact</label>
+  </div>
 </section>
 
 <div id="cv-content">
   <section id="top-intro">
-    <img src="{{ get_url(path="assets/global/img/lucas_jung.jpg") }}" alt="Lucas Jung profile picture">
+    <img src="{{ get_url(path="assets/global/img/lucas_jung-min.jpg") }}" alt="Lucas Jung profile picture">
     <div id="intro-title">
       <h1>Lucas Jung</h1>
       <p>@gruvw<span>(he/him)</span></p>
