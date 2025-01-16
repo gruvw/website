@@ -20,6 +20,7 @@ html {
   --bg-color: light-dark(white, black);
   --bg-hover-color: light-dark(#e0e0e0, #e0e0e0);
   --text-color: light-dark(black, white);
+  --accent-color: light-dark(green, green);
 }
 
 img, picture, video, canvas, svg {
@@ -71,7 +72,7 @@ a {
 
 main {
   flex-grow: 1;
-  margin: 0 1rem;
+  margin: 0 1.2rem;
 }
 
 footer {
