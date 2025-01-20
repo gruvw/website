@@ -172,6 +172,12 @@ main {
       gap: 0.8rem 0;
     }
 
+    .vert-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
     .cv-enum {
       display: grid;
       grid-gap: 0.5rem 1rem;
