@@ -450,26 +450,44 @@ Explore the professional resume of Lucas Jung aka Gruvw, showcasing skills, expe
 {% block script %}
 <script>
   // Toggle resume elements visibility for the compact style
-  document.getElementById("compact-toggle").addEventListener("change", function () {
+
+  const compactToggle = document.getElementById("compact-toggle");
+
+  const toggleVisibility = (elements, shouldHide) => {
+    elements.forEach(element => {
+      if (shouldHide) {
+        element.style.position = "absolute";
+        element.style.visibility = "hidden";
+        element.style.right = "0";
+        element.style.bottom = "0";
+      } else {
+        element.style.position = "static";
+        element.style.visibility = "visible";
+      }
+    });
+  };
+
+  const updateFromCheckbox = (isChecked) => {
     const compactVisibleElements = document.querySelectorAll(".compact-visible");
     const compactHiddenElements = document.querySelectorAll(".compact-hidden");
 
-    const toggleDisplay = (elements, shouldHide) => {
-      elements.forEach(element => {
-        if (shouldHide) {
-          element.style.position = "absolute";
-          element.style.visibility = "hidden";
-          element.style.right = "0";
-          element.style.bottom = "0";
-        } else {
-          element.style.position = "static";
-          element.style.visibility = "visible";
-        }
-      });
-    };
+    toggleVisibility(compactVisibleElements, !isChecked);
+    toggleVisibility(compactHiddenElements, isChecked);
 
-    toggleDisplay(compactVisibleElements, !this.checked);
-    toggleDisplay(compactHiddenElements, this.checked);
+    // Save state to localStorage
+    localStorage.setItem("compactToggleState", isChecked);
+  };
+
+  // Retrieve initial state from localStorage
+  const savedState = localStorage.getItem("compactToggleState");
+  if (savedState !== null) {
+    const isChecked = savedState === "true";
+    compactToggle.checked = isChecked;
+    updateFromCheckbox(isChecked);
+  }
+
+  compactToggle.addEventListener("change", function () {
+    updateFromCheckbox(this.checked);
   });
 </script>
 {% endblock script %}
