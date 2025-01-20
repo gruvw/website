@@ -92,7 +92,6 @@ main {
     bottom: 0;
   }
 
-
   #top-intro {
     display: flex;
     flex-direction: column;
@@ -181,7 +180,7 @@ main {
       grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     }
 
-    .grid-list {
+    .cv-grid-list {
       display: grid;
       grid-gap: 0.5rem 1rem;
       grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
@@ -278,6 +277,29 @@ main {
 
       p.large-justify {
         text-align: justify;
+      }
+    }
+  }
+}
+
+// Expand details on hover
+main:has(#compact-toggle:checked) {
+  #cv-content {
+    .cv-simple, .cv-detailed, .cv-enum, .cv-grid-list > * {
+      &:has(.compact-hidden) {
+        cursor: pointer;
+
+        &:hover {
+          .compact-hidden {
+            position: static !important;
+            visibility: visible !important;
+          }
+
+          .compact-visible {
+            position: absolute !important;
+            visibility: hidden !important;
+          }
+        }
       }
     }
   }
