@@ -1,3 +1,4 @@
-+++
-template = "standalone/projects.html"
-+++
+---
+template: "standalone/projects.html"
+page_template: "standard/project.html"
+---

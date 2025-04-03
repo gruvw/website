@@ -1,3 +1,7 @@
+# Gruvw Zola website config
+
+# run debug: zola serve --drafts
+
 base_url = "https://beta.gruvw.com"
 
 compile_sass = true
@@ -13,6 +17,10 @@ include_content = true
 
 [markdown]
 highlight_code = true
+highlight_theme = "one-dark"
+error_on_missing_highlight = true
+
+render_emoji = true
 
 [extra]
 title = "Gruvw" # website pages title and subtitle suffix
