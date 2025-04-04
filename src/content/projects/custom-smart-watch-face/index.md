@@ -1,6 +1,6 @@
 ---
-title: "Designing a custom smart watch face"
-description: "How I designed and created my own smart watch home screen."
+title: Designing a custom smart watch face
+description: How I designed and created my own smart watch home screen and customized it the way I wanted it to be.
 date: 2019-07-31
 updated: 2021-02-28
 draft: true
@@ -9,8 +9,6 @@ extra:
   tags:
     - Side project
 ---
-
-I designed my own smart watch home screen and customized it the way I wanted it to be.
 
 ## 💎 The Desire
 

@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="{{ get_url(path="base.css") }}">
   {% block style %}{% endblock style %}
 
-  <script src="{{ get_url(path="js/base.js") }}"></script>
+  <script src="{{ get_url(path="js/theme-switcher.js") }}"></script>
 </head>
 
 <body>
@@ -69,6 +69,8 @@
 
   {% block script %}
   {% endblock script %}
+
+  <script src="{{ get_url(path="js/base.js") }}"></script>
 </body>
 
 </html>

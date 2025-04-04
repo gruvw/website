@@ -15,11 +15,7 @@ Projects
 {% block content %}
 Projects page
 
-{% for post in section.pages %}
-  <h1><a href="{{ post.permalink }}">{{ post.title }}</a></h1>
-{% endfor %}
-{% for subsection in section.subsections %}
-  {% set subsection_section = get_section(path=subsection) %}
-  <h1><a href="{{ subsection_section.permalink }}">{{ subsection_section.title }}</a></h1>
+{% for page in section.pages %}
+  <h1><a href="{% if page.extra.repository_redirect %}{{ page.extra.repository }}{% else %}{{ page.permalink }}{% endif %}">{{ page.title }}</a></h1>
 {% endfor %}
 {% endblock content %}
