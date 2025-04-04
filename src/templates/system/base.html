@@ -22,14 +22,14 @@
   <link rel="stylesheet" href="{{ get_url(path="base.css") }}">
   {% block style %}{% endblock style %}
 
-  <script src="{{ get_url(path="js/themeSwitch.js") }}"></script>
+  <script src="{{ get_url(path="js/base.js") }}"></script>
 </head>
 
 <body>
   <header>
     <div id="top-bar">
       <a id="top-home" href="/">
-        <img src="{{ get_url(path="assets/global/img/lucas_jung-min.jpg") }}" alt="Lucas Jung profile picture">
+        <img src="{{ get_url(path="assets/img/lucas_jung-min.jpg") }}" alt="Lucas Jung profile picture">
         <span>Gruvw</span>
       </a>
 
@@ -39,24 +39,17 @@
       </label>
     </div>
 
-    <div id="nav-unfold">
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="{{ get_url(path="@/resume/index.md") }}">Resume</a></li>
-          <li><a href="{{ get_url(path="@/projects/_index.md") }}">Projects</a></li>
-          <li><a href="{{ get_url(path="@/resume/index.md") }}">Documents</a></li>
-          <li><a href="{{ get_url(path="@/resume/index.md") }}">Slides</a></li>
-          <li><a href="{{ get_url(path="@/resume/index.md") }}">About Me</a></li>
-          <li><a href="{{ get_url(path="@/resume/index.md") }}">Contact</a></li>
-        </ul>
-      </nav>
-
-      <label class="theme-picker-container">
-        <input type="checkbox" id="theme-picker"/>
-        Switch theme
-      </label>
-    </div>
+    <nav id="nav-unfold">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="{{ get_url(path="@/resume/index.md") }}">Resume</a></li>
+        <li><a href="{{ get_url(path="@/projects/_index.md") }}">Projects</a></li>
+        <li><a href="{{ get_url(path="@/resume/index.md") }}">Documents</a></li>
+        <li><a href="{{ get_url(path="@/resume/index.md") }}">Slides</a></li>
+        <li><a href="{{ get_url(path="@/resume/index.md") }}">About Me</a></li>
+        <li><a href="{{ get_url(path="@/resume/index.md") }}">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
@@ -68,6 +61,10 @@
     <div id="copyright">
       <p>© <script>document.write(/\d{4}/.exec(Date())[0])</script> Lucas Jung (@gruvw), All Rights Reserved.</p>
     </div>
+    <label class="theme-picker-container">
+      <input type="checkbox" id="theme-picker"/>
+      Switch theme
+    </label>
   </footer>
 
   {% block script %}

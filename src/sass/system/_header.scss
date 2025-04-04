@@ -94,10 +94,6 @@ header {
     opacity: 0;
     overflow-y: hidden;
     transition: opacity var(--animation-speed) var(--animation-type);
-
-    ul {
-      list-style: none;
-    }
   }
 
   &:has(#menu-btn:checked) #nav-unfold {
@@ -114,7 +110,7 @@ header {
       flex-wrap: wrap;
       background-color: var(--text-color);
       gap: var(--border-width);
-      border-bottom: var(--border-width) solid var(--text-color);
+      list-style: none;
 
       li {
         flex: 1 1 9rem;
@@ -134,4 +130,8 @@ header {
       }
     }
   }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    scroll-margin-top: 5rem;
 }
