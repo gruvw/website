@@ -43,43 +43,13 @@ I was now ready for writing the json file. This is just a file that will tell th
 
 This is an example taken from the json file:
 
-```json
+```json,linenos
 "Background": {
   "Image": {
     "X": 0,
     "Y": 0,
     "ImageIndex": 0
   }
-}
-```
-
-```css
-pre {
-  padding: 1rem;
-  overflow: auto;
-}
-/* The line numbers already provide some kind of left/right padding */
-pre[data-linenos] {
-  padding: 1rem 0;
-}
-pre table td {
-  padding: 0;
-}
-/* The line number cells */
-pre table td:nth-of-type(1) {
-  text-align: center;
-  vertical-align: top;
-  user-select: none;
-}
-pre mark {
-  /* If you want your highlights to take the full width */
-  display: block;
-  /* The default background colour of a mark is bright yellow */
-  background-color: rgba(254, 252, 232, 0.9);
-}
-pre table {
-  width: 100%;
-  border-collapse: collapse;
 }
 ```
 
