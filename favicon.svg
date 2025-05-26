@@ -1,0 +1,18 @@
+<svg  viewBox="0 0 444 444" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    :root { --light: #0d0d0d; --dark: #f2f2f2; }
+
+    path { stroke: var(--light); }
+    circle { fill: var(--light); }
+
+    @media (prefers-color-scheme: dark) {
+      path { stroke: var(--dark); }
+      circle { fill: var(--dark); }
+    }
+  </style>
+
+  <circle cx="368" cy="287" r="75" fill="#f2f2f2"/>
+  <circle cx="75" cy="369" r="75" fill="#f2f2f2"/>
+  <circle cx="150" cy="75" r="75" fill="#f2f2f2"/>
+  <path d="M370 287 75 368l74-292" stroke-width="50" stroke="#f2f2f2"/>
+</svg>
